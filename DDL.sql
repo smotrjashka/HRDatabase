@@ -1,7 +1,8 @@
 CREATE TABLE SALARY (
 s_empl_id CHAR(6),
+s_job_id INT4,
 s_salary BIGINT,
-primary key (s_empl_id)
+primary key (s_empl_id, s_job_id)
 );
 
 CREATE TABLE JOBS (
