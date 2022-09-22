@@ -33,7 +33,7 @@ primary key (e_education_key)
 CREATE TABLE DEPARTMENT (
 d_department_key SERIAL,
 d_department_name VARCHAR(30),
-d_mananger_key int4,
+d_mananger_key CHAR(6),
 primary key (d_department_key)
 );
 
