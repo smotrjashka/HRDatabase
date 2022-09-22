@@ -50,8 +50,6 @@ primary key (e_employee_key)
 CREATE TABLE POSITION (
 p_job_position_id SERIAL,
 e_employee_key CHAR(6),
-e_empl_name VARCHAR(50),
-e_empl_email varchar(320),
 e_job_title INT4,
 e_department_key INT4,
 e_location_id INT4,
