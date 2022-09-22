@@ -37,7 +37,7 @@ primary key (d_department_key)
 );
 
 CREATE TABLE EMPLOYEE (
-e_employee_key SERIAL,
+e_employee_key CHAR(6),
 e_empl_name VARCHAR(50),
 e_empl_email varchar(320),
 e_address VARCHAR(350),
