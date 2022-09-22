@@ -32,7 +32,6 @@ primary key (e_education_key)
 CREATE TABLE DEPARTMENT (
 d_department_key SERIAL,
 d_department_name VARCHAR(30),
-d_mananger_key CHAR(6),
 primary key (d_department_key)
 );
 
@@ -55,5 +54,6 @@ e_department_key INT4,
 e_location_id INT4,
 e_start_date DATE,
 e_end_date DATE,
+d_mananger_key CHAR(6),
 primary key (p_job_position_id)
 );
