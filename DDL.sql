@@ -1,8 +1,7 @@
 CREATE TABLE SALARY (
-s_empl_id CHAR(6),
 s_job_id INT4,
 s_salary BIGINT,
-primary key (s_empl_id, s_job_id)
+primary key (s_job_id)
 );
 
 CREATE TABLE JOBS (
@@ -41,14 +40,22 @@ CREATE TABLE EMPLOYEE (
 e_employee_key SERIAL,
 e_empl_name VARCHAR(50),
 e_empl_email varchar(320),
-e_job_title INT4,
-e_department_key INT4,
-e_location_id INT4,
 e_address VARCHAR(350),
 e_city_key INT4,
 e_education_level INT4,
 e_hire_date DATE,
+primary key (e_employee_key)
+);
+
+CREATE TABLE POSITION (
+p_job_position_id SERIAL,
+e_employee_key CHAR(6),
+e_empl_name VARCHAR(50),
+e_empl_email varchar(320),
+e_job_title INT4,
+e_department_key INT4,
+e_location_id INT4,
 e_start_date DATE,
 e_end_date DATE,
-primary key (e_employee_key)
+primary key (p_job_position_id)
 );
