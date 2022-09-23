@@ -21,7 +21,7 @@ proj_stg.address, CITY.c_city_k, EDUCATION.e_education_key, proj_stg.hire_dt
 
 
 INSERT INTO POSITION (e_employee_key, e_job_title, e_department_key, e_location_id, e_start_date, e_end_date, d_mananger_key)
-(SELECT proj_stg.Emp_ID, JOBS.j_job_id, DEPARTMENT.d_department_key, LOCATION.l_location_key, proj_stg.start_dt, proj_stg.end_dt, 
+(SELECT proj_stg.Emp_ID, JOBS.j_job_id, DEPARTMENT.d_department_key, LOCATION.l_location_key, proj_stg.start_dt, proj_stg.end_dt
                       FROM proj_stg JOIN JOBS ON proj_stg.job_title=JOBS.j_job_title
                       JOIN DEPARTMENT ON DEPARTMENT.d_department_name=proj_stg.department_nm 
                       JOIN LOCATION ON LOCATION.l_location_name=proj_stg.location
